@@ -10,12 +10,15 @@ class PostsController < ApplicationController
   end
 
   def edit
+    authorize @post
   end
 
   def show
-  end
+  endc
 
   def update
+    authorize @post
+
    if @post.update(post_params)
        redirect_to @post, notice: 'Your post was edited successfully'
    else
@@ -45,7 +48,7 @@ end
   private
 
   def post_params
-    params.require(:post).permit(:date, :rationale)
+    params.require(:post).permit(:date, :rationale, :status)
   end
 
   def set_post

@@ -91,8 +91,13 @@ describe 'navigate' do
       fill_in 'post[rationale]', with: "Some rationale"
       click_on "Save"
 
-      expect(page).to have_content("Edited content")
+      expect(@post.reload.status).to eq('approved')
+    end
 
+    it 'can be edited by an admin' do
+    end
+
+    it 'cannot be edited by a non admin' do
     end
   end
 end
