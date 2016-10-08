@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   end
 
   def show
-  endc
+  end
 
   def update
     authorize @post
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
        redirect_to @post, notice: 'Your post was edited successfully'
    else
     render :edit
-  end
+   end
 end
 
   def create
