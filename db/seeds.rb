@@ -1,8 +1,18 @@
-@user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
+@user = User.create(email: "test@test.com", 
+                    password: "asdfasdf", 
+                    password_confirmation: "asdfasdf", 
+                    first_name: "Jon", 
+                    last_name: "Snow"),
+                    phone: "01772123456")
 
 puts "1 User created"
 
-@user = AdminUser.create(email: "admin@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "Jon", last_name: "Snow")
+@user = AdminUser.create(email: "admin@test.com", 
+                         password: "asdfasdf", 
+                         password_confirmation: "asdfasdf", 
+                         first_name: "Jon", 
+                         last_name: "Snow"),
+                         phone: "01772123456")
 
 puts "1 Admin User created"
 
