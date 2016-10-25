@@ -7,4 +7,5 @@ FactoryGirl.define do
   end
 end
 
-AuditLog(user_id: User.last.id, status: 0, start_date (Date.today - 6.days))
+AuditLog(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
+
