@@ -7,9 +7,10 @@
   </div>
 
   <div class='pending-homepage'>
-    <div>
-      <p>asdf</p>
-    </div>
+    <h2>Confirmation Log</h2>
+    <hr>
+
+    <%= render partial: 'confirmation_log', locals: { recent_audit_items: @recent_audit_items } %>
   </div>
 </div>
-  
+

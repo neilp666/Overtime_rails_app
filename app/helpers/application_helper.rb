@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def admin_types
-    ['AdminUser'. 'Manager']
+    ['AdminUser', 'Manager']
   end
 
 
